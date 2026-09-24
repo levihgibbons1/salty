@@ -49,9 +49,9 @@ def main():
     (LOCAL / "files").mkdir(exist_ok=True)
     config_path = LOCAL / "settings.json"
     if not config_path.exists():
-        config = json.loads((ROOT / "config.example.json").read_text())
+        config = json.loads((ROOT / "config.example.json").read_text(encoding="utf-8"))
         config["secret_key"] = secrets.token_urlsafe(64)
-        with config_path.open("x") as file:
+        with config_path.open("x", encoding="utf-8") as file:
             json.dump(config, file, indent=2)
         config_path.chmod(0o600)
     run("manage.py", "migrate", "--noinput")

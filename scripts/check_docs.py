@@ -33,13 +33,13 @@ REQUIRED = (
 errors = []
 for name in REQUIRED:
     path = ROOT / name
-    if not path.is_file() or not path.read_text().strip():
+    if not path.is_file() or not path.read_text(encoding="utf-8").strip():
         errors.append(f"Missing or empty required file: {name}")
 
 files = list(ROOT.glob("*.md")) + list((ROOT / "docs").rglob("*.md"))
 files += list((ROOT / ".github").rglob("*.md"))
 for path in files:
-    source = path.read_text()
+    source = path.read_text(encoding="utf-8")
     source = re.sub(r"```.*?```", "", source, flags=re.S)
     for target in re.findall(r"\[[^\]]*\]\(([^\s)]+)\)", source):
         parsed = urlsplit(target)

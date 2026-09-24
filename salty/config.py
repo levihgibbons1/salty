@@ -12,7 +12,7 @@ LOCAL = ROOT / ".local"
 def load_config(path=None):
     path = path or LOCAL / "settings.json"
     try:
-        config = json.loads(path.read_text())
+        config = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         raise ImproperlyConfigured(
             "Local configuration is missing or invalid. Run: python scripts/dev.py setup"
