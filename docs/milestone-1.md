@@ -6,7 +6,7 @@ A second contributor can run SALTY with fictional identities, import two semeste
 
 ## Work items
 
-- [ ] **M1-01: Development scaffold.** Inspect any available existing project code, select the stack in an architecture decision, and document install/start/test/reset commands. Provide a health check and reproducible dependencies.
+- [x] **M1-01: Development scaffold.** Inspect any available existing project code, select the stack in an architecture decision, and document install/start/test/reset commands. Provide a health check and reproducible dependencies.
 - [ ] **M1-02: Identity and permissions.** Add fictional student, teacher, and staff accounts with permanent person IDs. Enforce contextual server-side access. Verify production startup rejects development sign-in.
 - [ ] **M1-03: Records and fixtures.** Add database migrations and entirely fictional data for at least two students, two terms, course sections, assignments, submissions, feedback, and example files.
 - [ ] **M1-04: Import pipeline.** Validate source data, map identities, preserve files and provenance, report errors, and prevent duplicates on retries.

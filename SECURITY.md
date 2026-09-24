@@ -1,6 +1,6 @@
 # Security and data boundaries
 
-Status: engineering requirements, not a certification or claim of implemented controls. SALTY currently contains no application or real school data. Institutional policies and applicable obligations must be confirmed by the school before a real-data pilot.
+Status: engineering requirements, not a certification or claim of implemented controls. SALTY currently contains only a local development scaffold and no real school data. Institutional policies and applicable obligations must be confirmed by the school before a real-data pilot.
 
 ## Reporting
 

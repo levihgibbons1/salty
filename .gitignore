@@ -26,3 +26,4 @@ exports/
 # Workstation metadata
 .DS_Store
 weppy-project-sync/
+.ruff_cache/

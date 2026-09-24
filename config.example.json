@@ -1,0 +1,4 @@
+{
+  "environment": "development",
+  "secret_key": "GENERATE_LOCALLY_WITH_SETUP"
+}
