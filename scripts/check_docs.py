@@ -2,19 +2,33 @@
 
 This is not a Markdown parser or an application/security test suite.
 """
-from pathlib import Path
+
 import re
 import sys
+from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = (
-    "README.md", "AGENTS.md", "CONTRIBUTING.md", "CLAUDE.md", "GEMINI.md",
-    "docs/architecture.md", "docs/milestone-1.md", "docs/access-tracker.md",
-    "docs/decisions.md", "docs/README.md", "SECURITY.md",
-    "docs/product.md", "docs/data-contract.md", "docs/app-contract.md",
-    "docs/testing.md", "docs/operations.md", "docs/tasks/m1-01.md",
-    "docs/templates/decision.md", "docs/templates/handoff.md",
+    "README.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "docs/architecture.md",
+    "docs/milestone-1.md",
+    "docs/access-tracker.md",
+    "docs/decisions.md",
+    "docs/README.md",
+    "SECURITY.md",
+    "docs/product.md",
+    "docs/data-contract.md",
+    "docs/app-contract.md",
+    "docs/testing.md",
+    "docs/operations.md",
+    "docs/tasks/m1-01.md",
+    "docs/templates/decision.md",
+    "docs/templates/handoff.md",
 )
 errors = []
 for name in REQUIRED:

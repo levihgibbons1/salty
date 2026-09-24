@@ -1,6 +1,6 @@
 # SALTY architecture
 
-Status: proposed foundation; implementation pending.
+Status: local Django scaffold implemented; academic entities, identity, and integrations remain proposed.
 
 ## System boundaries
 
@@ -57,4 +57,4 @@ Each migration requires requirements coverage, reconciliation, an explicit owner
 
 ## Stack selection
 
-No application stack is selected yet. Proposed shape: a modular web application, relational database, file storage, and a background import worker. M1-01 records the selected tools and tradeoffs, then supplies a reproducible setup. Evaluate existing project compatibility, contributor setup, maintainability, deployment, and access enforcement.
+The local scaffold uses Django, SQLite, and local file storage; see ADR-003 in [decisions](decisions.md). Proposed shape: a modular web application, relational database, file storage, and a background import worker. M1-01 records the selected tools and tradeoffs, then supplies a reproducible setup. Evaluate existing project compatibility, contributor setup, maintainability, deployment, and access enforcement.

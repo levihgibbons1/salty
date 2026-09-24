@@ -1,11 +1,12 @@
 # SALTY handbook
 
-Status: implementation guidance for a documentation-only repository. Requirements in these documents describe what must be built; they do not claim controls or features already exist.
+Status: implementation guidance for the local scaffold and future milestones. Requirements in these documents describe what must be built; they do not claim controls or features already exist.
 
 ## Reading routes
 
 | Your task | Read in order |
 | --- | --- |
+| Run the app | [Local development](local-development.md) |
 | First contribution | [Project overview](../README.md), [shared instructions](../AGENTS.md), [contribution guide](../CONTRIBUTING.md), [current milestone](milestone-1.md) |
 | Plan product behavior | [Product brief](product.md), [architecture](architecture.md), [decisions](decisions.md) |
 | Implement persistence or imports | [Data contract](data-contract.md), [security](../SECURITY.md), [testing](testing.md) |

@@ -2,7 +2,7 @@
 
 ## Available now
 
-Run `python3 scripts/check_docs.py` and `git diff --check`. The documentation checker verifies required files and simple relative Markdown file links. It does not validate anchors, external URLs, Markdown semantics, security, or application behavior.
+Run `python scripts/dev.py check` after setup, plus `git diff --check`. The aggregate command runs Ruff, documentation checks, Django system checks, migration drift checks, and eight scaffold tests. The documentation checker verifies required files and simple relative Markdown file links. It does not validate anchors, external URLs, Markdown semantics, security, or application behavior.
 
 ## Required as implementation arrives
 
@@ -23,4 +23,4 @@ List exact commands and their outcomes, explain skipped checks, and identify fix
 
 ## CI growth
 
-The current workflow checks documentation only. The scaffold task must add application checks appropriate to the selected stack. Before a shared pilot, configure maintainer review and required checks in repository settings; a YAML file does not enable branch protection.
+The workflow runs the aggregate scaffold checks on Python 3.12 and 3.14 on Linux, plus 3.14 on Windows. Before a shared pilot, configure maintainer review and required checks in repository settings; a YAML file does not enable branch protection.

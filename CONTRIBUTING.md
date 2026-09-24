@@ -2,21 +2,13 @@
 
 ## Setup today
 
-Requirements: Git and Python 3.10+. An AI tool is optional.
-
-```sh
-git clone https://github.com/levihgibbons1/salty.git
-cd salty
-python3 scripts/check_docs.py
-```
-
-There is no application to start yet. Application setup and fixture commands must be added with the implementation, not represented as already working.
+Requirements: Git and Python 3.12–3.14. An AI tool is optional. Follow [local development](docs/local-development.md) to install, configure, start, and verify the application.
 
 Read [AGENTS.md](AGENTS.md) and [the milestone](docs/milestone-1.md). If using an assistant, ask it to read those files explicitly. CLAUDE.md and GEMINI.md are entry points to the same instructions; other tools can read AGENTS.md directly.
 
 ## Choose work
 
-Open a task issue using the template. Reference a milestone item, define the expected behavior and how it will be verified, and coordinate ownership before starting overlapping work. The first implementation task is M1-01: choose and scaffold the development stack.
+Open a task issue using the template. Reference a milestone item, define the expected behavior and how it will be verified, and coordinate ownership before starting overlapping work. M1-01 provides the development scaffold. Next is M1-02: fictional identities and server-side permissions.
 
 A useful agent prompt is: “Read AGENTS.md and the milestone. Implement issue NUMBER within its scope, run relevant checks, and report what works and what remains unfinished.”
 

@@ -4,7 +4,7 @@ These instructions apply throughout this repository to human contributors and co
 
 ## Context
 
-Read README.md, docs/architecture.md, and docs/milestone-1.md before implementation. SALTY is intended to own school records and workflows over time. It is currently a documentation foundation, not a functioning school system.
+Read README.md, docs/architecture.md, and docs/milestone-1.md before implementation. SALTY is intended to own school records and workflows over time. It currently has a local Django scaffold, not a functioning school system. Read docs/local-development.md for commands.
 
 ## Work process
 
@@ -12,7 +12,7 @@ Read README.md, docs/architecture.md, and docs/milestone-1.md before implementat
 - Inspect existing code and instructions before editing. Preserve unrelated changes.
 - Use a short-lived branch; `codex/` is the default for Codex-created branches. Other tools may use `feat/`, `fix/`, or `docs/`.
 - Keep changes focused and reviewable. Document important interface or architecture decisions in docs/decisions.md.
-- Run `python3 scripts/check_docs.py` for documentation changes. Once application commands exist, document and run the relevant checks. Never claim a test or integration ran if it did not.
+- Run `python3 scripts/check_docs.py` for documentation changes. Run `python scripts/dev.py check` for application changes. Never claim a test or integration ran if it did not.
 - Explain the change, verification, and outstanding limitations in the pull request.
 - Do not deploy, modify institutional accounts, or transfer authoritative records as part of routine development.
 
