@@ -33,3 +33,7 @@ Use preview environments with fictional data once hosting exists. Maintainers sh
 ## School information
 
 Do not place private records in issues, screenshots, logs, or pull requests. Use sample data. Report suspected exposure privately to a repository maintainer rather than reproducing sensitive content in a public issue.
+
+## Implementation-ready tasks and handoffs
+
+Start with the [M1-01 task brief](docs/tasks/m1-01.md). Use the [handbook](docs/README.md) to find relevant contracts. For work passed to another person or tool, use the [handoff template](docs/templates/handoff.md). Record substantial decisions with the [ADR template](docs/templates/decision.md). Read [security requirements](SECURITY.md) before adding storage, authentication, imports, or agent tools.

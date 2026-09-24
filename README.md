@@ -12,6 +12,10 @@ Google is the intended school sign-in provider. Permanent SALTY person IDs remai
 
 This repository contains the project foundation and contributor documentation. **There is no runnable application, database, authentication service, or live integration yet.** No school administrator access is needed to contribute to this stage.
 
+## Documentation
+
+Use the [SALTY handbook](docs/README.md) for role-specific reading routes, contracts, testing, and operations. [Security requirements](SECURITY.md) apply to every future app and integration.
+
 ## Start here
 
 1. Clone `https://github.com/levihgibbons1/salty.git` and open the repository in your editor or coding tool.
